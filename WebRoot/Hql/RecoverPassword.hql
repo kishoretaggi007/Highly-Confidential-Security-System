@@ -1,1 +1,0 @@
-select  login.password from ProfileTO profile,LoginTO login where login.loginid=? and profile.securityQestion=? and profile.securityanswer=? 

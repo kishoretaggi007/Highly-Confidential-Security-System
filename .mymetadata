@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HighlyConfidentialSecuritySystem"
+  id="myeclipse.1347276629218"
+  context-root="/HighlyConfidentialSecuritySystem"
+  j2ee-spec="5.0"
+  archive="HighlyConfidentialSecuritySystem.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
