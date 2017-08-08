@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hcss.bean.BankTO" table="BANK_DETAILS">
+		<id column="BANKID" name="bankid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="bankName">
+			<column name="BANKNAME" />
+		</property>
+		<property name="branchName">
+			<column name="BRANCHNAME" />
+		</property>
+		<property name="accnumber">
+			<column name="ACCNUMBER" />
+		</property>
+		<property name="username">
+			<column name="USERNAME" />
+		</property>
+		<property name="password">
+			<column name="PASSWORD" />
+		</property>
+		<property name="atmcardno">
+			<column name="ATMCARDNO" />
+		</property>
+		<property name="atmpin">
+			<column name="ATMPIN" />
+		</property>
+		<property name="siteurl">
+			<column name="SITEURL" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.DrivingLicenseTO" table="DRIVING_LIESENCE_DETAILS">
+		<id column="LIESENCEID" name="liesenceid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="liesenceno">
+			<column name="LIESENCENO" />
+		</property>
+		<property name="vechicleType">
+			<column name="VEHICLETYPE" />
+		</property>
+		<property name="issueddate">
+			<column name="ISSUEDDATE" />
+		</property>
+		<property name="validdate">
+			<column name="VALIDITY" />
+		</property>
+		<property name="vehicleno">
+			<column name="VEHICLENO" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.EducationTO" table="EDUCATIONAL_DETAILS">
+		<id column="EDUCATIONID" name="educationid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="educationname">
+			<column name="EDUCATIONNAME" />
+		</property>
+		<property name="hallticketno">
+			<column name="HALLTICKETNO" />
+		</property>
+		<property name="yearofpass">
+			<column name="YEAROFPASS" />
+		</property>
+		<property name="totalmarks">
+			<column name="TOTALMARKS" />
+		</property>
+		<property name="aggregation">
+			<column name="AGGRETATION" />
+		</property>
+		<property name="percentage">
+			<column name="PERCENTAGE" />
+		</property>
+		<property name="scanedmemo" type="java.sql.Blob">
+			<column name="SCANEDMEMO" />
+		</property>
+		<property name="memotype">
+			<column name="MEMOTYPE" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.InsuranceTO" table="INSURENCE_DETAILS">
+		<id column="INSURENCEID" name="insurenceid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="companyname">
+			<column name="COMPANYNAME" />
+		</property>
+		<property name="policyname">
+			<column name="POLICYNAME" />
+		</property>
+		<property name="policyno">
+			<column name="POLICYNO" />
+		</property>
+		<property name="premiumamount">
+			<column name="PREMIUMAMOUNT" />
+		</property>
+		<property name="premiumdate">
+			<column name="PREMIUMDATE" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.MailsTO" table="MAIL_DETAILS">
+		<id column="MAILID" name="mailid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="mailidstring">
+			<column name="MAILIDSTRING" />
+		</property>
+		<property name="password">
+			<column name="PASSWORD" />
+		</property>
+		<property name="sitename">
+			<column name="SITENAME" />
+		</property>
+		<property name="siteurl">
+			<column name="SITEURL" />
+		</property>
+		<property name="status">
+			<column name="STATUS" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.PancardTO" table="PANCARD_DETAILS">
+		<id column="PANID" name="panid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="accname">
+			<column name="ACCNAME" />
+		</property>
+		<property name="pancardno">
+			<column name="PANCARDNO" />
+		</property>
+		<property name="issuedate">
+			<column name="ISSUDDATE" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.PassportTO" table="PASSPORT_DETAILS">
+		<id column="PASSPORTID" name="passportid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="passportno">
+			<column name="PASSPORTNO" />
+		</property>
+		<property name="issueddate">
+			<column name="ISSUEDDATE" />
+		</property>
+		<property name="validitydate">
+			<column name="VALIDITYDATE" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.ProfileTO" table="USERDETAILS">
+		<id column="USERID" name="userid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="firstName">
+			<column name="FIRSTNAME" />
+		</property>
+		<property name="lastName">
+			<column name="LASTNAME" />
+		</property>
+		<property name="birthDate">
+			<column name="DOB" />
+		</property>
+		<property name="registerDate">
+			<column name="DOR" />
+		</property>
+		<property name="securityQestion">
+			<column name="FORGOTPWQUESTION" />
+		</property>
+		<property name="securityanswer">
+			<column name="FORGOTPWANSWER" />
+		</property>
+		<property name="photograph">
+			<column name="PHOTOGRAPH" />
+		</property>
+		<property name="emailId">
+			<column name="EMAILID" />
+		</property>
+		<property name="gender">
+			<column name="GENDER" />
+		</property>
+		<property name="status">
+			<column name="STATUS" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.LoginTO" table="LOGINDETAILS">
+		<id column="USERIDREF" name="useridref" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="loginid">
+			<column name="LOGINID" />
+		</property>
+		<property name="password">
+			<column name="PASSWORD" />
+		</property>
+		<property name="logintype">
+			<column name="LOGINTYPE" />
+		</property>
+		<property name="securityCode">
+			<column name="SECURITYCODE" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.AddressTO" table="ADDRESSES">
+		<id column="ADDRESSID" name="addressid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="addresstype">
+			<column name="ADDRESSTYPE" />
+		</property>
+		<property name="houseno">
+			<column name="HOUSENO" />
+		</property>
+		<property name="street">
+			<column name="STREET" />
+		</property>
+		<property name="city">
+			<column name="CITY" />
+		</property>
+		<property name="district">
+			<column name="DISTRICT" />
+		</property>
+		<property name="state">
+			<column name="STATE" />
+		</property>
+		<property name="country">
+			<column name="COUNTRY" />
+		</property>
+		<property name="pincode">
+			<column name="PINCODE" />
+		</property>
+		<property name="phonetype">
+			<column name="PHONETYPE" />
+		</property>
+		<property name="phoneno">
+			<column name="PHONENO" />
+		</property>
+	</class>
+	<class name="com.hcss.bean.UserImpFilesTO" table="IMPORTANT_FILES">
+		<id column="FILEID" name="fileid" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="useridref">
+			<column name="USERIDREF" />
+		</property>
+		<property name="filename">
+			<column name="FILENAME" />
+		</property>
+		<property name="filedescription">
+			<column name="FILEDESCRIPTION" />
+		</property>
+		<property name="filedata" type="java.sql.Blob">
+			<column name="FILEDATA" />
+		</property>
+		<property name="filetype">
+			<column name="FILETYPE" />
+		</property>
+	</class>
+
+</hibernate-mapping>

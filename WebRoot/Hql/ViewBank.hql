@@ -1,0 +1,1 @@
+from BankTO bank where bank.useridref=?
